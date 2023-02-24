@@ -14,7 +14,7 @@ async def bypass(ctx, arg):
   dest = chunks[1]
   stripped = dest.split('"')
   embed = discord.Embed()
-  embed.add_field(name="Bypassed:", value=stripped[3], inline=False)
+  embed.add_field(name="Link:", value=stripped[3], inline=False)
   await ctx.send(embed=embed)
 @bot.event
 async def on_ready(  ):
