@@ -19,5 +19,6 @@ async def bypass(ctx, arg):
 @bot.event
 async def on_ready():
     await bot.change_presence(activity=discord.Game('https://github.com/NoSkill33'))
+    print('Logged in')
 
 bot.run("enter token here")
